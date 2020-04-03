@@ -1,0 +1,14 @@
+server:
+  port: 8888
+management.server.port: 8889
+spring:
+  kafka:
+    consumer:
+      group-id: kafka-group
+      auto-offset-reset: earliest
+    bootstrap-servers: localhost:19093
+
+app:
+  kafka:
+    topic-name: 'sample-topic'
+    messages-per-request: 10
